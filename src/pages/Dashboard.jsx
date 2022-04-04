@@ -1,16 +1,19 @@
-import React from 'react' 
-
+import React from 'react'
+import { ReactDOM } from 'react'
 import TicketCard from '../components/TicketCard'
 
-function Dashboard() {
+function Dashboard(props) {
 
+  /* -------------------------------------------------------------------------- */
+  /*                          Fake data for tickets app                         */
+  /* -------------------------------------------------------------------------- */
   const tickets = [
 
     {
 
-      category: 'B1 2022',
+      category: 'Alan 2022',
       color: 'blue',
-      title: 'NFT Safety',
+      title: 'Insecure 45',
       owner: 'Joana Belisk',
       avatar: 'https://avatars.githubusercontent.com/u/53535932?s=400&u=886a5a5fd49a701f84b6270da3410da193a0e60f&v=4',
       status: 'done',
@@ -22,9 +25,9 @@ function Dashboard() {
     },
     {
 
-      category: 'B1 2022',
+      category: 'f1 2022',
       color: 'red',
-      title: 'NFT Safety',
+      title: 'Bolao',
       owner: 'Joana Belisk',
       avatar: 'https://avatars.githubusercontent.com/u/53535932?s=400&u=886a5a5fd49a701f84b6270da3410da193a0e60f&v=4',
       status: 'done',
@@ -50,7 +53,7 @@ function Dashboard() {
     },
     {
 
-      category: 'B1 2022',
+      category: 'Cd 2022',
       color: 'cyan',
       title: 'NFT Safety',
       owner: 'Joana Belisk',
@@ -63,51 +66,18 @@ function Dashboard() {
 
     }
 
-
   ]
 
-console.log(tickets)
-
-
+  /* -------------------------------------------------------------------------- */
+  /*                             filter the tickets                             */
+  /* -------------------------------------------------------------------------- */
   const uniqueCategories = [
-    new Set(tickets?.map(({ category }) => category))
+    ...new Set(tickets?.map(({ category }) => category))
   ]
 
-
-  return (
-    <div className="Dashboard">Dashboard
-
-      <h1>My Project</h1>
-      <div className={"ticket-container"}>
-        {tickets && uniqueCategories?.map((uniqueCategories, categoryIndex) => (
-
-          <div key={categoryIndex}>
-
-            <h3>{uniqueCategory} </h3>
-            {tickets.filter(ticket => ticket.category === uniqueCategory)
-              .map((filteredTicket, _index) => (
-                <TicketCard
-                  id={_index}
-                  color={filteredTicket.color}
-                  ticket={filteredTicket}
-
-                />
-              ))
+return <h1>Oi</h1>
 
 }
-          </div>
-        ))}
 
 
-
-
-      </div>
-
-
-    </div>
-  )
-}
-
-
-
-export default Dashboard
+        export default Dashboard

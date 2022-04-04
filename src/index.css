@@ -2,6 +2,11 @@ css/* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
 */
+
+
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,6 +26,7 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -49,13 +55,15 @@ table {
 
 .app{
     display: flex;
+    background-color: #fff;
 }
 
 
 nav{
     display: flex;
+    height: 100vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #feca01;
    
@@ -68,8 +76,15 @@ nav .icon{
 }
 
 .logo{
-width: 260px;
-}
+    width:auto ;
+    height: 45px;
+    padding: 8px;
+    background-color: #fff;}
+
+
+    /* -------------------------------------------------------------------------- */
+    /*                              Dashboard Styles                              */
+    /* -------------------------------------------------------------------------- */
 
 .dashboard{
     width: 100%;
@@ -77,11 +92,35 @@ width: 260px;
 }
 
 .dashboard .ticket-container{
+    display: flex;
+    background-color: coral;
     height: 80vh;
-    overflow: scroll;
+    border-radius: 8px;
+    padding: 10px;
+    color: #000;
 }
+
+
 
 .ticket-card{
     display: flex;
     width: 100px;
+    background-color: darkgoldenrod;
+    color: #000;
 }
+
+.ticket-card #link{
+    display: flex;
+    width: 100%;
+}
+
+.ticket-card #link > *{
+    background-color: brown;
+}
+
+
+
+
+
+
+

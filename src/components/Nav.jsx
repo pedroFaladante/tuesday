@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../images/logo.svg'
+import logo from '../images/tuesday_icon.png'
 import {useNavigate} from 'react-router-dom'
 
  function Nav() {
@@ -8,7 +8,7 @@ const navigate= useNavigate()
 
 
   return (
-    <nav>
+    <nav> 
 
     
     <div className="logo-container">
@@ -20,7 +20,7 @@ const navigate= useNavigate()
 <div className="controls-container">
 
 <div className="icon" onClick={()=>navigate("./ticket")} > + </div>
-<div className="icon" onClick={()=>navigate("./ticket")} > * </div>
+<div className="icon" onClick={()=>navigate("./")} > « </div>
 
 </div>
 
