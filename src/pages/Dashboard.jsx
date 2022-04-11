@@ -75,7 +75,11 @@ function Dashboard(props) {
     ...new Set(tickets?.map(({ category }) => category))
   ]
 
-return <h1>Oi</h1>
+return { 
+
+
+  
+}
 
 }
 
