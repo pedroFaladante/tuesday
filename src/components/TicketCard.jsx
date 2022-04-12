@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 
 import { Link } from 'react-router-dom'
@@ -27,6 +28,30 @@ const TicketCard = ({ color, ticket }) => {
       </div>
 
 
+=======
+import Avatar from './AvatarDisplay'
+import StatusDisplay from './StatusDisplay'
+import PriorityDisplay from './PriorityDisplay'
+import ProgressDisplay from './ProgressDisplay'
+import DeleteBlock from './DeleteBlock'
+
+
+
+ function TicketCard(color,ticket) {
+  return (
+  <div className="ticket-card">
+  {/* <Link> */}
+  <div className="ticket-color"></div>
+  <h1>Title</h1>
+    <div>AvatarDisplay</div>
+    <div>StatusDisplay</div>
+    <div>PriorityDisplay</div>
+    <div>ProgressDisplay</div>
+{/*    
+    </Link> */}
+   
+    </div>
+>>>>>>> f7c98d548839c14295562d2fc5baf10092591396
   )
 }
 

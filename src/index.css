@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 css/* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
@@ -7,6 +8,12 @@ License: none (public domain)
 
 
 
+=======
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+>>>>>>> f7c98d548839c14295562d2fc5baf10092591396
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,6 +59,7 @@ table {
     border-spacing: 0;
 }
 
+<<<<<<< HEAD
 
 .app{
     display: flex;
@@ -124,3 +132,32 @@ nav .icon{
 
 
 
+=======
+.ticket-container{
+background-color: #c4c4c4;
+color: #688b98;
+
+
+}
+
+.dashboard{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 10px;
+background-color: #fff;
+color: #123744;
+
+}
+
+
+.ticket-card{
+display: flex;
+flex-direction: row;
+justify-content:left;
+background-color: #fff;
+font-size: 12px;
+
+
+}
+>>>>>>> f7c98d548839c14295562d2fc5baf10092591396
