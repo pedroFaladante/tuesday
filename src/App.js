@@ -1,9 +1,9 @@
+import React from 'react'
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
 import TicketPage from './pages/TicketPage'
 import TestCard from './components/TestCard'
 import Nav from './components/Nav'
-import React from 'react'
 
 
 function App() {

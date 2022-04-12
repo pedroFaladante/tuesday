@@ -71,17 +71,17 @@ function Dashboard(props) {
   /* -------------------------------------------------------------------------- */
   /*                             filter the tickets                             */
   /* -------------------------------------------------------------------------- */
-  const uniqueCategories = [
-    ...new Set(tickets?.map(({ category }) => category))
-  ]
+
 
 return { 
 
 
-  
+<h1>Hewloo</h1>
+
+
 }
 
 }
 
 
-        export default Dashboard
+   export default Dashboard
